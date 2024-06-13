@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consultar Usuario - Biblioteca Ed, Edd y Eddy</title>
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="Estilos/paginas.css">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg ">
+      <a href="index.html">
+        <img src="media/edd.webp" alt="" width="100">
+      </a>
+      <a class="navbar-brand" href="index.html">Biblioteca Ed, Edd y Eddy</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="acerca.html">Acerca</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="c">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+
+      <div class="col-md-3">
+        <div class="list-group">
+          <a href="prestarlibro.html" class="list-group-item list-group-item-action">Prestar Libro</a>
+            <a href="consultarUsuario.html" class="list-group-item list-group-item-action active">Consultar Usuario</a>
+            <a href="consultarCatalogo.html" class="list-group-item list-group-item-action">Consultar Catálogo</a>
+            <a href="consultarPrestamos.html" class="list-group-item list-group-item-action">Consultar Préstamos</a>
+            <a href="calcularMultas.html" class="list-group-item list-group-item-action ">Módulo para Calcular y Cobrar Multas</a>
+            <a href="reportes.html" class="list-group-item list-group-item-action ">Módulo de Reportes</a>
+            <a href="prorroga.html" class="list-group-item list-group-item-action">Prorroga</a>
+            <a href="editoriales/modificarEditorial.php" class="list-group-item list-group-item-action">Mantenedor de Editoriales</a>
+            <a href="libro/agregar.php" class="list-group-item list-group-item-action">Mantenedor de Libros</a>
+            <a href="genero/agregar.php" class="list-group-item list-group-item-action">Mantenedor Genero</a>
+            <a href="autor/agregar.php" class="list-group-item list-group-item-action">Mantenedor Autor</a>
+
+        </div>
+      </div>
+
+      <div class="col-md-9">
+        <div class="content">
+
+          <div class="welcome-message">
+            <h2>Consultar Usuario</h2>
+            <form id="consultarUsuarioForm">
+              <div class="form-group">
+                <label for="rut">RUT:</label>
+                <input type="text" class="form-control" id="rut" placeholder="Ingrese RUT ejemplo: 17.504.921-5"
+                  required>
+                <div class="invalid-feedback">El RUT es requerido.</div>
+              </div>
+              <button type="submit" class="btn btn-primary">Aceptar</button>
+            </form>
+          </div>
+
+          <div class="table-container" id="resultadoConsulta">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="container">
+      <p>&copy; Plataforma creada por Ed, Edd y Eddy. © Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script src="js/consultarUsuario.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    position: relative;
+    z-index: 0;
+}
+
+.navbar {
+    background-color: #912e4b !important;
+    font-style: italic;
+    color: #000000;
+}
+
+.navbar a {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dafcfc;
+    font-family: sans-serif;
+    text-decoration-style: white;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 40px;
+}
+
+.card {
+    position: relative;
+    width: 350px;
+    height: 550px;
+    padding: 30px 25px;
+    background: #fff;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease;
+    border-radius: 45px;
+    margin-top: 100px;
+}
+
+.card:hover {
+    transform: translateY(20px);
+}
+
+.card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(208, 195, 195, 0.5), rgb(227, 16, 16));
+    transition: all 0.5s;
+    opacity: 0;
+    border-radius: 40px;
+}
+
+.card:hover::after {
+    opacity: 1;
+}
+
+.card .card-body {
+    position: relative;
+    color: #ffffff;
+    padding-top: 200px;
+    opacity: 1;
+    transition: all 0.5s;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 40px 40px 0 0;
+    flex-grow: 1;
+}
+
+.card>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 40px;
+}
+
+.card .info {
+    position: absolute;
+    bottom: 30px;
+    left: 25px;
+    right: 25px;
+    color: dark;
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+.card:hover .info {
+    opacity: 1;
+}
+
+.card .info h1 {
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.card .info p {
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    margin: 10px 0 25px;
+    line-height: 130%;
+}
+
+.card .info .btn {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background: #fff;
+    color: #4b5563;
+    font-size: 0.85rem;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.card .info .btn:hover {
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+    background-color: #4b5563;
+    color: #fff;
+}

@@ -1,0 +1,85 @@
+.header{
+  background-image: url(/media/fondo.webp);
+  background-position: center;
+  background-size: cover;
+}
+.navbar {
+  background-color: #912e4b !important;
+  font-style: italic;
+  color: #ffffff;
+}
+
+.navbar a {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.img-lado {
+  width: 70%;
+  padding-top: 90px;
+}
+
+.img-logo {
+  width: 150px;
+}
+
+.vh-50 {
+  height: 50vmin;
+}
+
+.card-img-filter {
+  filter: brightness(0.5);
+}
+
+.card {
+  font-family: 'Courier New', Courier, monospace;
+  font-style: italic;
+  transition-duration: 0.6s;
+  clip-path: polygon(50% 0,
+      100% 0,
+      100% 50%,
+      100% 100%,
+      50% 100%,
+      0 100%,
+      0 50%,
+      0 0);
+}
+
+.card-effect:hover .card {
+  clip-path: polygon(50% 0,
+      50% 0,
+      100% 50%,
+      100% 50%,
+      50% 100%,
+      50% 100%,
+      0 50%,
+      0 50%);
+}
+
+.card-img-overlay {
+  transition-duration: 0.6s;
+}
+
+.card-effect:hover .card-img-overlay {
+  transform: scale(0.9);
+}
+
+.carousel {
+  width: 100%;
+  height: 75vh;
+  overflow: auto;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  text-align: center;
+}

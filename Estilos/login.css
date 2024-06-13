@@ -1,0 +1,35 @@
+.bg-image-vertical {
+    position: absolute; /* establece el posicionamiento de la imagen*/
+    overflow: hidden; /* oculta contenido si se desborda*/
+    background-repeat: no-repeat; /* evita que se repita la imagen*/
+    background-position: center; /* centra la imagen*/
+    background-size: cover; /*hace que la imagen cubra todo el c*/
+}
+
+
+
+@media (min-width: 1025px) {
+    .h-custom-2 {
+        height: 100vh;
+        overflow: hidden;
+    }
+}
+
+
+body {
+    overflow: hidden;
+    text-align: left;  
+    font-family: monospace;
+    background-color: #e5f3e5;
+}
+h1, h2 {
+    letter-spacing: 15px;
+}
+.welcome-text {
+    width: 200px;
+    letter-spacing: 20px;
+}
+
+#errorDisplayed {
+    overflow-y: scroll;
+}
